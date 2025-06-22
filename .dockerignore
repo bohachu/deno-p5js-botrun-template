@@ -2,8 +2,10 @@
 .gitignore
 .env
 README.md
-Dockerfile
+Dockerfile*
 .dockerignore
 sh/
 node_modules/
 .DS_Store
+server
+server.tmp-*
