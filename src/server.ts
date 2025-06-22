@@ -31,6 +31,7 @@ app.use(async (ctx, next) => {
 app.use(router.routes());
 app.use(router.allowedMethods());
 
-const port = 8000;
-console.log(`Server running on http://localhost:${port}`);
-await app.listen({ port });
+const port = 8080;
+const hostname = "0.0.0.0";
+console.log(`Server running on http://${hostname}:${port}`);
+await app.listen({ hostname, port });
