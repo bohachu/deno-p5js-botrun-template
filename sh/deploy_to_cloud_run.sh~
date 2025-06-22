@@ -2,7 +2,7 @@
 set -e
 
 # === Configuration ===
-SERVICE_NAME="$(basename "$(pwd)")"
+SERVICE_NAME="deno-p5js-botrun"
 REGION="asia-east1"
 PROJECT_ID="scoop-386004"
 
