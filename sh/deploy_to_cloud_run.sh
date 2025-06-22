@@ -41,7 +41,7 @@ echo
 
 # --- Build Docker Image ---
 echo "Building Docker image with Distroless and compiled Deno binary..."
-docker build --platform linux/amd64 -f Dockerfile.distroless -t "${IMAGE_NAME}" .
+docker build --platform linux/amd64 -t "${IMAGE_NAME}" .
 echo "Docker image built successfully."
 
 # Get image size for comparison
