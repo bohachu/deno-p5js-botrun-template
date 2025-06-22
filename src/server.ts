@@ -31,7 +31,7 @@ app.use(async (ctx, next) => {
 app.use(router.routes());
 app.use(router.allowedMethods());
 
-const port = 8080;
+const port = parseInt(Deno.env.get("PORT") || "8080");
 const hostname = "0.0.0.0";
 console.log(`Server running on http://${hostname}:${port}`);
 await app.listen({ hostname, port });
